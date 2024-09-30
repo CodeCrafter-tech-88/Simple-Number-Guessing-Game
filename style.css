@@ -1,0 +1,146 @@
+/* moi */
+
+/* .inputDisabled {
+    pointer-events: none;
+  }
+.buttonDisabled {
+  cursor: not-allowed;
+} */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Title Styling */
+h1.guessTitle {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Instruction Text Styling */
+p.guessNum {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #7f8c8d;
+}
+
+/* Input Styling */
+#guess-input {
+  padding: 10px;
+  width: 200px;
+  border: 2px solid #2980b9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+#guess-input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.inputDisabled {
+  background-color: #e74c3c;
+  color: white;
+  border-color: #c0392b;
+  cursor: not-allowed;
+}
+
+/* Button Styling */
+#guess-btn {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#guess-btn:hover {
+  background-color: #3498db;
+  transform: scale(1.05);
+}
+
+#guess-btn:active {
+  transform: scale(1);
+}
+
+#guess-btn.disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  /* pointer-events: none; */
+}
+
+/* Result Styling */
+#result {
+  font-size: 1.4rem;
+  color: #34495e;
+  margin-top: 20px;
+}
+#win {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+}
+#scoreWin {
+  font-size: 1.5rem;
+  color: blue;
+  margin-top: 20px;
+}
+
+/* Score Text Styling */
+#score,
+#scoreDown,
+#youLose,
+#result {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#scoreDown {
+  color: red;
+  font-weight: bold;
+}
+
+#youLose {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+/* @media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1.guessTitle {
+    font-size: 2rem;
+  }
+
+  #guess-input,
+  #guess-btn {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+} */
